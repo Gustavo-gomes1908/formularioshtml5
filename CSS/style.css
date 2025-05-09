@@ -1,6 +1,6 @@
 :root{
-    --background-color: rgb(255, 140, 0);
-    --text-color: black;
+    --background-color: #e16e10;
+    --text-color: #ffffff;
 }
 
 *{
@@ -11,8 +11,8 @@
 body{
     width: 100%;
     height: 100vh;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,12 +32,26 @@ header{
 
 main{
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 2px solid var(--text-color);
     border-radius: 20px;
     padding: 2rem;
+    width: 55%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+input{
+    width: 100%;
+    position: relative;
 }
 
 footer{
